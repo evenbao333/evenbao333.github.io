@@ -4,7 +4,7 @@ layout: default
 <article class="article">
   <a class="back" href="{{ '/' | relative_url }}">← 返回文章列表</a>
   <h1>{{ page.title | escape }}</h1>
-  <div class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y 年 %m 月 %d 日' }}</time> · {% if page.categories contains '个人/比赛经历' %}个人/比赛经历{% else %}竞赛题解{% endif %}</div>
+  <div class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y 年 %m 月 %d 日' }}</time> · {% if page.categories contains '随笔与回忆' %}随笔与回忆{% else %}竞赛题解{% endif %}</div>
   {% if page.password_hash and page.password_salt %}
   <section id="post-password-gate" class="password-gate" data-hash="{{ page.password_hash | escape }}" data-salt="{{ page.password_salt | escape }}">
     <div class="gate-icon">🔒</div>
